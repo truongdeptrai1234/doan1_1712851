@@ -48,7 +48,7 @@
 		 wcscpy(SV[m].MoTa, create);
 		 
 		 n = 0;
-		 while (1){
+		 while (true){
 			 create = wcstok(NULL, L",");
 			 if (create == NULL)
 				 break;
