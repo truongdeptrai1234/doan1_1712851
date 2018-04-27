@@ -23,9 +23,9 @@
 	//Ghi file HTML
  void ghi(SINHVIEN *SV,FILE* p){
 	
-	 int m = 0; int n = 0;
+	 int m = 0; 
 	 wchar_t set[256]; wchar_t *create;
-	 int a[max], l = 0,count=0;
+	 int a[max],count=0;
 	 fseek(p, 3L, SEEK_SET);
 	 while (fgetws(set, 255, p) != NULL)
 	 {
@@ -47,16 +47,12 @@
 		 create = wcstok(NULL, L",");
 		 wcscpy(SV[m].MoTa, create);
 		 
-		 n = 0;
 		 while (true){
 			 create = wcstok(NULL, L",");
 			 if (create == NULL)
 				 break;
 			 wcscpy( SV[m].soThich, create);
-			 n++;
 		 }
-		 a[l] = n;
-		 l++;
 		 wprintf(L"\n");
 		 m++;
 
