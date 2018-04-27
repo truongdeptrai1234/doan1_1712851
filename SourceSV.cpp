@@ -63,7 +63,7 @@
 	 }
 	 wprintf(L"\n");
 	
-	 for (int stt = 1; j < m; stt++)
+	 for (int stt = 1; stt < m; stt++)
 		 {
 			 
 			 wchar_t namefile[max];
